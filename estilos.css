@@ -1,0 +1,197 @@
+/*
+ * Archivo de estilos para mi proyecto
+ * Autor: Gerardo López Artime
+ * Fecha: 16 de febrero del 2025
+ */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    margin-top: 70px;
+}
+
+/* Header */
+header {
+    background-color: #1e88e5;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sección de bienvenida */
+.welcome {
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*inscripción*/
+.register-form {
+    margin: 20px;
+    margin-left: 650px;
+    width: 400px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 50%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Proyectos */
+.projects {
+    max-width: 1300px;
+    margin: auto;
+}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.project-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Datos de usuario*/
+.profile {
+    font-size: 20px;
+    text-align: center;
+    margin: 90px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: #1e88e5;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #1565c0;
+}
+
+.welcome,
+        .register-form,
+        .projects,
+        .profile {
+            width: 90%; /* Ocupa el 90% del ancho en móviles */
+            margin: 2rem auto; /* Centrado automático */
+        }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e88e5;
+    color: white;
+    margin-top: auto;
+}
+
+/* Estilos para móviles (pantallas de hasta 768px de ancho) */
+@media (max-width: 768px) {
+    .mi-elemento {
+        width: 100%; /* El elemento ocupa todo el ancho en móviles */
+        padding: 10px;
+    }
+
+    body {
+        font-size: 16px; /* Tamaño de fuente para móviles */
+    }
+}
+
+/* Estilos para pantallas grandes (pantallas de 1200px de ancho o más) */
+@media (min-width: 1200px) {
+    .mi-elemento {
+        width: 50%; /* El elemento ocupa la mitad del ancho en pantallas grandes */
+    }
+}

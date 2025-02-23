@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscribirse - ColabCode</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ColabCode</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="inscripcion.html">Inscribirse</a></li>
+                <li><a href="logout.html">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="register-form">
+            <h2>Inscríbete en ColabCode</h2>
+            <form id="registroForm" action="/register" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmarPassword">Confirmar contraseña:</label>
+                    <input type="password" id="confirmarPassword" name="confirmarPassword" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CódigoCompartido. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="JS/registro.js"></script>
+</body>
+</html>
